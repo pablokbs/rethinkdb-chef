@@ -1,0 +1,29 @@
+runuser=<%= node["vfense"]["config"]["runuser"] %>
+rungroup=<%= node["vfense"]["config"]["rungroup"] %>
+pid-file=<%= node["vfense"]["config"]["pid-file"] %>
+directory=<%= node["vfense"]["config"]["directory"] %>
+log-file=<%= node["vfense"]["config"]["log-file"] %>
+bind=<%= node["vfense"]["config"]["bind"] %>
+driver-port=<%= node["vfense"]["config"]["driver-port"] %>
+cluster-port=<%= node["vfense"]["config"]["cluster-port"] %>
+
+<% unless node["vfense"]["config"]["join"].nil? -%>
+  join=<%= node["vfense"]["config"]["join"] %>
+<% end -%>
+
+port-offset=<%= node["vfense"]["config"]["port-offset"] %>
+
+<% unless node["vfense"]["config"]["reql-http-proxy"].nil? -%>
+  join=<%= node["vfense"]["config"]["reql-http-proxy"] %>
+<% end -%>
+
+http-port=<%= node["vfense"]["config"]["http-port"] %>
+
+<% unless node["vfense"]["config"]["no-http-admin"].nil? -%>
+  join=<%= node["vfense"]["config"]["node-http-admin"] %>
+<% end -%>
+
+cores=<%= node["vfense"]["config"]["cores"] %>
+cache-size=<%= node["vfense"]["config"]["cache-size"] %>
+io-threads=<%= node["vfense"]["config"]["io-threads"] %>
+server-name=<%= node["vfense"]["config"]["server-name"] %>
