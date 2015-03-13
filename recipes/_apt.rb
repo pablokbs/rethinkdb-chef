@@ -1,13 +1,8 @@
 apt_repository "rethinkdb" do
-  uri          "http://download.rethinkdb.com/apt"
+  uri          node['rethinkdb']['debian']['repo']
   components   ["main"]
   distribution node["lsb"]["codename"]
-  key          "http://download.rethinkdb.com/apt/pubkey.gpg"
+  key          node['rethinkdb']['debian']['pubkey']
   action       :add
   notifies     :run, "execute[apt-get update]", :immediately
-end
-
-package "rethinkdb" do
-  version node["rethinkdb"]["version"]
-  action :install
 end

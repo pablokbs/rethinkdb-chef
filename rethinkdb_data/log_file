@@ -1,0 +1,18 @@
+2015-03-13T18:32:22.066344801 0.066190s notice: Recursively removing directory /home/linuxdynasty/rethinkdb-chef/rethinkdb_data/tmp
+2015-03-13T18:32:22.077874084 0.077720s notice: Initializing directory /home/linuxdynasty/rethinkdb-chef/rethinkdb_data
+2015-03-13T18:32:22.077987333 0.077832s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/home/linuxdynasty/rethinkdb-chef/rethinkdb_data' did not already exist or is empty.)
+2015-03-13T18:32:22.078900669 0.078745s notice: Running rethinkdb 1.16.2+1~0utopic (GCC 4.9.1)...
+2015-03-13T18:32:22.083673309 0.083520s notice: Running on Linux 3.16.0-30-generic x86_64
+2015-03-13T18:32:22.083730331 0.083575s notice: Loading data from directory /home/linuxdynasty/rethinkdb-chef/rethinkdb_data
+2015-03-13T18:32:22.138507273 0.138353s info: Automatically using cache size of 11292 MB
+2015-03-13T18:32:22.141446820 0.141291s notice: Listening for intracluster connections on port 29015
+2015-03-13T18:32:22.143810071 0.143655s notice: Listening for client driver connections on port 28015
+2015-03-13T18:32:22.143875920 0.143720s notice: Listening for administrative HTTP connections on port 8080
+2015-03-13T18:32:22.143878034 0.143722s notice: Listening on addresses: 127.0.0.1, 127.0.1.1, ::1
+2015-03-13T18:32:22.143878986 0.143723s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2015-03-13T18:32:22.143879927 0.143724s notice: Server ready, "ld_g75_6wq" e40199e8-c032-499c-9623-74066e9ba50b
+2015-03-13T18:32:24.884388659 2.884233s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2015-03-13T18:32:24.884484031 2.884328s notice: Shutting down client connections...
+2015-03-13T18:32:24.884602803 2.884447s notice: All client connections closed.
+2015-03-13T18:32:24.884607143 2.884451s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2015-03-13T18:32:24.889444278 2.889289s notice: Storage engine shut down.

@@ -1,29 +1,23 @@
-runuser=<%= node["vfense"]["config"]["runuser"] %>
-rungroup=<%= node["vfense"]["config"]["rungroup"] %>
-pid-file=<%= node["vfense"]["config"]["pid-file"] %>
-directory=<%= node["vfense"]["config"]["directory"] %>
-log-file=<%= node["vfense"]["config"]["log-file"] %>
-bind=<%= node["vfense"]["config"]["bind"] %>
-driver-port=<%= node["vfense"]["config"]["driver-port"] %>
-cluster-port=<%= node["vfense"]["config"]["cluster-port"] %>
-
-<% unless node["vfense"]["config"]["join"].nil? -%>
-  join=<%= node["vfense"]["config"]["join"] %>
+runuser=<%= node['rethinkdb']['config']['runuser'] %>
+rungroup=<%= node['rethinkdb']['config']['rungroup'] %>
+pid-file=<%= node['rethinkdb']['config']['pid-file'] %>
+directory=<%= node['rethinkdb']['config']['instance_directory'] %>
+log-file=<%= node['rethinkdb']['config']['log-file'] %>
+bind=<%= node['rethinkdb']['config']['bind'] %>
+driver-port=<%= node['rethinkdb']['config']['driver-port'] %>
+cluster-port=<%= node['rethinkdb']['config']['cluster-port'] %>
+port-offset=<%= node['rethinkdb']['config']['port-offset'] %>
+http-port=<%= node['rethinkdb']['config']['http-port'] %>
+cores=<%= node['rethinkdb']['config']['cores'] %>
+cache-size=<%= node['rethinkdb']['config']['cache-size'] %>
+io-threads=<%= node['rethinkdb']['config']['io-threads'] %>
+server-name=<%= node['rethinkdb']['config']['server-name'] %>
+<% unless node['rethinkdb']['config']['join'].nil? -%>
+join=<%= node['rethinkdb']['config']['join'] %>
 <% end -%>
-
-port-offset=<%= node["vfense"]["config"]["port-offset"] %>
-
-<% unless node["vfense"]["config"]["reql-http-proxy"].nil? -%>
-  join=<%= node["vfense"]["config"]["reql-http-proxy"] %>
+<% unless node['rethinkdb']['config']['reql-http-proxy'].nil? -%>
+reql-http-proxy=<%= node['rethinkdb']['config']['reql-http-proxy'] %>
 <% end -%>
-
-http-port=<%= node["vfense"]["config"]["http-port"] %>
-
-<% unless node["vfense"]["config"]["no-http-admin"].nil? -%>
-  join=<%= node["vfense"]["config"]["node-http-admin"] %>
+<% unless node['rethinkdb']['config']['no-http-admin'].nil? -%>
+no-http-admin
 <% end -%>
-
-cores=<%= node["vfense"]["config"]["cores"] %>
-cache-size=<%= node["vfense"]["config"]["cache-size"] %>
-io-threads=<%= node["vfense"]["config"]["io-threads"] %>
-server-name=<%= node["vfense"]["config"]["server-name"] %>
