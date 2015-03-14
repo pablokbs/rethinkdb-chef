@@ -1,3 +1,4 @@
+default['rethinkdb']['instance_name'] = 'default'
 default['rethinkdb']['install_method'] = 'package'
 default['rethinkdb']['debian_version'] = '1.16.2+1~0trusty'
 default['rethinkdb']['src_url'] = 'http://download.rethinkdb.com/dist'
@@ -6,7 +7,7 @@ default['rethinkdb']['debian']['pubkey'] = "#{default['rethinkdb']['debian']['re
 default['rethinkdb']['redhat_version'] = '1.16.2'
 default['rethinkdb']['redhat']['repo'] = "http://download.rethinkdb.com/centos/#{node['platform_version']}/#{node[:languages][:ruby][:host_cpu]}/rethinkdb.repo"
 
-instance_name = 'chef'
+instance_name = default['rethinkdb']['instance_name']
 base_dir = "/var/lib/rethinkdb/"
 instance_dir = "#{base_dir}/instances.d"
 pid_file = "/var/run/rethinkdb/#{instance_name}.pid"
