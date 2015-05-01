@@ -6,6 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 include_recipe "apt"
+include_recipe "yum"
 
 case node["platform_family"]
   when "debian"
