@@ -1,5 +1,7 @@
 # rethinkdb-chef-cookbook
 
+[![Join the chat at https://gitter.im/vFense/rethinkdb-chef](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/vFense/rethinkdb-chef?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 TODO: Enter the cookbook description here.
 
 ## Supported Platforms
