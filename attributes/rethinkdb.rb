@@ -11,7 +11,8 @@ instance_name = default['rethinkdb']['instance_name']
 base_dir = "/var/lib/rethinkdb/"
 instance_dir = "#{base_dir}/instances.d"
 pid_file = "/var/run/rethinkdb/#{instance_name}.pid"
-config_file = "/etc/rethinkdb/instances.d/#{instance_name}.conf"
+default["rethinkdb"]["config_dir"] = "/etc/rethinkdb/instances.d"
+config_file = "#{default["rethinkdb"]["config_dir"]}/#{instance_name}.conf"
 default['rethinkdb']['config_file'] = config_file
 
 
