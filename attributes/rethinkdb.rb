@@ -1,10 +1,10 @@
 default['rethinkdb']['instance_name'] = 'default'
 default['rethinkdb']['install_method'] = 'package'
-default['rethinkdb']['debian_version'] = '1.16.2+1~0trusty'
+default['rethinkdb']['debian_version'] = "2.1.3~0#{node['lsb']['codename']}"
 default['rethinkdb']['src_url'] = 'http://download.rethinkdb.com/dist'
 default['rethinkdb']['debian']['repo'] = 'http://download.rethinkdb.com/apt'
 default['rethinkdb']['debian']['pubkey'] = "#{default['rethinkdb']['debian']['repo']}/pubkey.gpg"
-default['rethinkdb']['redhat_version'] = '1.16.2'
+default['rethinkdb']['redhat_version'] = '2.1.3'
 default['rethinkdb']['redhat']['repo'] = "http://download.rethinkdb.com/centos/#{node['platform_version'].to_i}/#{node[:languages][:ruby][:host_cpu]}/"
 
 instance_name = default['rethinkdb']['instance_name']

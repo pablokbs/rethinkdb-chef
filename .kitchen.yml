@@ -3,8 +3,6 @@ driver:
   name: vagrant
   customize:
     memory: 2048
-  network:
-    - ["public_network", bridge: 'eth0']
 
 provisioner:
   name: chef_zero
