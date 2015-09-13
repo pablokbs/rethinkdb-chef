@@ -1,10 +1,10 @@
 name             'rethinkdb'
-maintainer       'YOUR_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'Allen Sanabria'
+maintainer_email 'asanabria.linuxdynasty.org'
 license          'All rights reserved'
-description      'Installs/Configures rethinkdb-chef'
-long_description 'Installs/Configures rethinkdb-chef'
-version          '0.1.1'
+description      'Installs/Configures RethinkDB'
+long_description 'Installs/Configures RethinkDB'
+version          '0.1.2'
 
 depends "apt"
 depends "yum"
